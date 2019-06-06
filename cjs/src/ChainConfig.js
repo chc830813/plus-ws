@@ -33,6 +33,11 @@ _this = {
             core_asset: "GOV",
             address_prefix: "FEW",
             chain_id: "1cfde7c388b9e8ac06462d68aadbd966b58f88797637d9af805b4560b0e9661e"
+        },
+        PLUS: {
+            core_asset: "PLUS",
+            address_prefix: "PLUS",
+            chain_id: "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
         }
     },
 
