@@ -19,16 +19,16 @@
     "build-es": "BABEL_ENV=es babel ./lib -d es",
     "postbuild": "npm run browserify && npm run build-es",
     "prepublish": "npm run build",
-    "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone bitshares_ws -o build/bitsharesjs-ws.js -d",
-    "postbrowserify": "NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/bitsharesjs-ws.min.js -- build/bitsharesjs-ws.js"
+    "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone plus_ws -o build/pluschainjs-ws.js -d",
+    "postbrowserify": "NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/pluschainjs-ws.min.js -- build/pluschainjs-ws.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chc830813/plus-ws.git"
   },
-  "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
+  "author": "chenhongcheng<chc830813@sina.com>",
   "contributors": [
-    "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)"
+    "chenhongcheng<chc830813@sina.com>"
   ],
   "license": "BSD-2-Clause-FreeBSD",
   "bugs": {
